@@ -3,11 +3,7 @@ import time
 import numpy as np
 import pandas as pd
 
-CITY_DATA = { 
-    'chicago': 'chicago.csv',
-    'new york': 'new_york_city.csv',
-    'washington': 'washington.csv'
-}
+CITY_DATA = { 'chicago': 'chicago.csv', 'new york': 'new_york_city.csv', 'washington': 'washington.csv' }
 
 def collect_filters():
     """
@@ -56,6 +52,7 @@ def consume_data(city, month, day):
     - pandas.DataFrame: A DataFrame containing the filtered bikeshare data.
 
     """
+
     data = pd.read_csv(CITY_DATA[city])
     data['Start Time'] = pd.to_datetime(data['Start Time'])
     data['month'] = data['Start Time'].dt.month
@@ -78,6 +75,7 @@ def time_based_analyze(data):
     Returns:
         Print out the result
     """
+    
     print('\nCalculating The Most Frequent Times of Travel...\n')
     start_time = time.time()
     pop_month = data['month'].mode()[0]
@@ -100,6 +98,7 @@ def station_based_analyze(data):
     Returns:
         Print out the result
     """
+
     print('\nCalculating The Most Popular Stations and Trip...\n')
     start_time = time.time()
     start_station = data['Start Station'].mode()[0]
@@ -143,6 +142,7 @@ def user_based_analyze(data, city):
         earliest year of birth, most recent year of birth, and most common year of birth.
 
     """
+
     print('\nCalculating User Stats...\n')
     start_time = time.time()
     user_types = data['User Type'].value_counts()
@@ -199,6 +199,7 @@ def main():
     Returns:
         None
     """
+    
     while True:
         city, month, day = collect_filters()
         data = consume_data(city, month, day)
