@@ -29,7 +29,7 @@ To use this program, follow these steps:
 
 ### Files used
 - bikeshare.py
-- csv files contatins data
+- csv files contains raw data.
 
 ### Credits
 - [Udacity's GitHub repository](https://github.com/udacity)
