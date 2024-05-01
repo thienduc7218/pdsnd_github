@@ -7,7 +7,6 @@ Wednesday 1st May 2024
 Udacity Explore US Bikeshare Data
 
 ### Description
-#### Project Description
 
 This project aims to develop a program that analyzes bikeshare data. The program will provide insights and statistics about bike usage patterns in a specific city. By analyzing the data, users will be able to gain valuable information such as popular bike stations, peak usage hours, and average trip durations.
 
