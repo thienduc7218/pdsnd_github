@@ -31,6 +31,7 @@ To use this program, follow these steps:
 - csv files contains raw data.
 
 ### Credits
+- [Repo where contains source code](https://github.com/thienduc7218/pdsnd_github)
 - [Udacity's GitHub repository](https://github.com/udacity)
 - [Pandas documentation](https://pandas.pydata.org/docs/)
 - [NumPy documentation](https://numpy.org/doc/)
